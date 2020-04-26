@@ -27,6 +27,7 @@
         v-bind="$attrs"
         :type="showPassword ? (passwordVisible ? 'text': 'password') : type"
         :disabled="inputDisabled"
+        :title="inputDisabled?value:''"
         :readonly="readonly"
         :autocomplete="autoComplete || autocomplete"
         ref="input"
