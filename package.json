@@ -1,6 +1,6 @@
 {
   "name": "dt-element-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Component Library for PUMC.",
   "main": "lib/element-ui.common.js",
   "files": [
