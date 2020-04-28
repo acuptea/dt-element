@@ -29,9 +29,9 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["element-ui"],
+          "root": ["dt-element-ui"],
           "alias": {
-            "element-ui/src": "element-ui/lib"
+            "dt-element-ui/src": "dt-element-ui/lib"
           }
         }]
       ]
