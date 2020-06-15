@@ -1,9 +1,35 @@
 <div align="left">
   <b>基于element-ui,有以下修改：</b>
-  <ul>
+  <ul class="margin-bottom:20px;">
     <li>1.直接修改了基础颜色配置，不用每个系统再单独引入。</li>
     <li>2.input/select/cascader在不可输入状态下，统一增加title属性。</li>
     <li>3.input输入数字时，不需要鼠标滚轮滚动修改数字的效果。</li>
+    <li>4.image组件增加了previewType属性，取值为image/text，当为text类型时，可以配置previewText,实现点击文字查看图片效果。</li>
+  </ul>
+  <b>如何需要与element-ui同时按需引入：</b>
+  <ul>
+    <li>在babel.config.js中增加配置：
+      <code>
+      plugins: [
+        [
+          "component",
+          {
+            "libraryName": "element-ui",
+            "styleLibraryName": "theme-chalk"
+          }
+        ],
+        [
+          "component",
+          {
+            "libraryName": "dt-element-ui",
+            "styleLibraryName": "theme-chalk"
+          },
+          'dt'
+        ]
+      ]</code>
+      <br/>
+      增加之后，其余使用与element-ui一样，注意同一个组件只选择dt-element-ui或者element-ui其中之一来引入。
+    </li>
   </ul>
 </div>
 
