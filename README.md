@@ -5,6 +5,7 @@
     <li>2.input/select/cascader在不可输入状态下，统一增加title属性。</li>
     <li>3.input输入数字时，不需要鼠标滚轮滚动修改数字的效果。</li>
     <li>4.image组件增加了previewType属性，取值为image/text，当为text类型时，可以配置previewText,实现点击文字查看图片效果。</li>
+    <li>5.el-table默认增加border属性，方便用户拖拽每一列。</li>
   </ul>
   <b>如何需要与element-ui同时按需引入：</b>
   <ul>
